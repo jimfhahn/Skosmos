@@ -84,25 +84,12 @@
 
 # Skosmos vocabularies
 
-:unesco a skosmos:Vocabulary, void:Dataset ;
-    dc:title "UNESCO Thesaurus"@en ;
-    skosmos:shortName "UNESCO";
+:fast a skosmos:Vocabulary, void:Dataset ;
+    dc:title "Faceted Application of Subject Terminology"@en ;
+    skosmos:shortName "FAST";
     dc:subject :cat_general ;
-    void:uriSpace "http://skos.um.es/unescothes/";
-    skosmos:language "en", "es", "fr", "ru";
+    void:uriSpace "http://id.worldcat.org/fast/";
+    skosmos:language "en" ;
     skosmos:defaultLanguage "en";
-    skosmos:showTopConcepts true ;
-    skosmos:fullAlphabeticalIndex true ;
-    skosmos:groupClass isothes:ConceptGroup ;
     void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://skos.um.es/unescothes/> .
-
-:stw a skosmos:Vocabulary, void:Dataset ;
-    dc:title "STW Thesaurus for Economics"@en ;
-    skosmos:shortName "STW";
-    dc:subject :cat_general ;
-    void:uriSpace "http://zbw.eu/stw/";
-    skosmos:language "en", "de";
-    skosmos:defaultLanguage "de";
-    void:sparqlEndpoint <http://fuseki-cache:80/skosmos/sparql> ;
-    skosmos:sparqlGraph <http://zbw.eu/stw/> .
+    skosmos:sparqlGraph <http://id.worldcat.org/fast/> .
